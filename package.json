@@ -1,0 +1,22 @@
+{
+  "name": "apiscrappy",
+  "version": "1.0.0",
+  "main": "scrappy.js",
+  "scripts": {
+    "start": "nodemon scrappy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-myconnection": "^1.0.4",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.2.10",
+    "puppeteer": "^18.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "description": ""
+}
