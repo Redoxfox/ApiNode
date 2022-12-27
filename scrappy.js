@@ -6,6 +6,8 @@ const myconnection = require('express-myconnection')
 //const { route } = require('./routes')
 const routes = require('./routes')
 const connetionString= require('./config')
+const cors = require('cors');
+
 
 app.set('port', process.env.PORT || 9000)
 app.listen(app.get('port'), ()=>{
@@ -25,6 +27,11 @@ app.use(myconnection(mysql,dbOptions,'single'))
 app.get('/',(req,res)=>{
     res.send('Hola mundo')
 })
+
+app.use(cors({
+    origin: 'https://node.tuxcarlostorres.com/'
+}));
+
 app.use('/api',routes)
 
 
