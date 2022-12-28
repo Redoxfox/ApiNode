@@ -25,7 +25,7 @@ app.use(express.json())
 const dbOptions = connetionString.dbOptions()
 app.use(myconnection(mysql,dbOptions,'single'))
 app.get('/',(req,res)=>{
-    res.send('Hola mundo')
+    res.send('Hola mundo mod')
 })
 
 app.use(cors({
