@@ -29,7 +29,7 @@ app.get('/',(req,res)=>{
 })
 
 app.use(cors({
-    origin: 'https://node.tuxcarlostorres.com/'
+    origin: ['https://node.tuxcarlostorres.com/', 'https://digital.tuxcarlostorres.com/dashboard_scrapper']
 }));
 
 app.use('/api',routes)
